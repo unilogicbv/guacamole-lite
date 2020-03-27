@@ -38,7 +38,7 @@ const guacdOptions = {
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     }
 };
 
@@ -99,7 +99,7 @@ function encryptToken($value)
     $value = \openssl_encrypt(
         json_encode($value),
         'AES-256-CBC',
-        'MySuperSecretKeyForParamsToken12',
+        base64_decode('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc='),
         0,
         $iv
     );
@@ -130,7 +130,7 @@ const crypto = require('crypto');
 
 const clientOptions = {
     cypher: 'AES-256-CBC',
-    key: 'MySuperSecretKeyForParamsToken12'
+    key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
 }
 
 const encrypt = (value) => {
@@ -180,7 +180,7 @@ const GuacamoleLite = require('guacamole-lite');
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     },
 
     connectionDefaultSettings: {
@@ -218,7 +218,7 @@ const GuacamoleLite = require('guacamole-lite');
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     },
     allowedUnencryptedConnectionSettings: {
         rdp: [
@@ -267,7 +267,7 @@ const GuacamoleLite = require('guacamole-lite');
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     },
 };
 
@@ -317,7 +317,7 @@ const Http = require('http');
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     },
 };
 
@@ -364,7 +364,7 @@ const guacdOptions = {
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     }
 };
 
@@ -392,7 +392,7 @@ const guacdOptions = {
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     },
     log: {
         level: 'DEBUG'
@@ -434,7 +434,7 @@ const guacdOptions = {
 const clientOptions = {
     crypt: {
         cypher: 'AES-256-CBC',
-        key: 'MySuperSecretKeyForParamsToken12'
+        key: Buffer.from('8Xf0v7vK1SWIpSzXgJowpI2ruRj0MIdmNCpqvL14Jdc=', 'base64')
     },
     log: {
         level: 'DEBUG',
